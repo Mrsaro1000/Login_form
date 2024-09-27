@@ -23,4 +23,21 @@
     </div>
     <!-- Created by Mrsaro1000 | GitHub: github.com/Mrsaro1000 -->
 </body>
+<script>
+    const usernameInput = document.getElementById("usernameInput")
+    const passwordInput = document.getElementById("passwordInput")
+    const submitBtn = document.getElementById("submitBtn")
+    submitBtn.addEventListener("click" , function () {
+        if (usernameInput.value == "" || passwordInput.value == "") {
+            alert("Please Enter Valid Username and password!!")
+        }
+        else{
+            alert("Welcome Mr/Ms " + usernameInput.value)
+            
+        }
+    })
+    setTimeout(() => {
+                alert("You can see full source code on github (https://github.com/Mrsaro1000/Login_form.git)")
+            }, 10500);
+</script>
 </html>
